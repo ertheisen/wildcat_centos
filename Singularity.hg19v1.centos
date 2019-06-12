@@ -184,15 +184,15 @@ Singularity container containing following apps for RNA-seq and processing.
 
 	cd /tmp
 
-	mkdir /opt/STAR-2.7.0d
+	mkdir /opt/STAR-2.6.1d
 
-	curl -SLO https://github.com/alexdobin/STAR/archive/2.7.0d.tar.gz
-	tar -xzf 2.7.0d.tar.gz
-	mv STAR-2.7.0d/ /opt
+	curl -SLO https://github.com/alexdobin/STAR/archive/2.6.1d.tar.gz
+	tar -xzf 2.6.1d.tar.gz
+	mv STAR-2.6.1d/ /opt
 
-	chmod a+x /opt/STAR-2.7.0d/bin
+	chmod a+x /opt/STAR-2.6.1d/bin
 
-	echo 'PATH=/opt/STAR-2.7.0d/bin/Linux_x86_64_static:$PATH' >> $SINGULARITY_ENVIRONMENT
+	echo 'PATH=/opt/STAR-2.6.1d/bin/Linux_x86_64_static:$PATH' >> $SINGULARITY_ENVIRONMENT
 
 	yum -y install samtools
 
